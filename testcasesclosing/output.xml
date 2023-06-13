@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230613 16:43:42.221" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase4" source="/home/akmal/qatest/testcasesclosing/testcase4.robot">
+<test id="s1-t1" name=" TestCase4:Verify that user are able to select more than one reason in the checkbox" line="46">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230613 16:43:42.311" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
+<status status="PASS" starttime="20230613 16:43:42.311" endtime="20230613 16:43:45.049"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1280</arg>
+<arg>1024</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230613 16:43:45.049" endtime="20230613 16:43:45.158"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230613 16:43:45.158" endtime="20230613 16:43:45.168"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:45.168" level="INFO">Clicking element 'dt_login_button'.</msg>
+<status status="PASS" starttime="20230613 16:43:45.168" endtime="20230613 16:43:49.486"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>txtEmail</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230613 16:43:49.486" endtime="20230613 16:43:49.499"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>txtEmail</arg>
+<arg>mohamad.akmal@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:49.500" level="INFO">Typing text 'mohamad.akmal@besquare.com.my' into text field 'txtEmail'.</msg>
+<status status="PASS" starttime="20230613 16:43:49.499" endtime="20230613 16:43:49.561"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>txtPass</arg>
+<arg>55113366Aa*.+</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:49.561" level="INFO">Typing password into text field 'txtPass'.</msg>
+<msg timestamp="20230613 16:43:49.583" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230613 16:43:49.610" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230613 16:43:49.561" endtime="20230613 16:43:49.610"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@name="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:49.611" level="INFO">Clicking element '//button[@name="login"]'.</msg>
+<status status="PASS" starttime="20230613 16:43:49.610" endtime="20230613 16:43:56.170"/>
+</kw>
+<status status="PASS" starttime="20230613 16:43:42.310" endtime="20230613 16:43:56.170"/>
+</kw>
+<kw name="CloseAccountSettings">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class="dc-icon"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:43:56.171" endtime="20230613 16:43:56.195"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@href="/account/personal-details"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:43:56.195" endtime="20230613 16:43:56.213"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@href="/account/personal-details"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:56.214" level="INFO">Clicking element '//*[@href="/account/personal-details"]'.</msg>
+<status status="PASS" starttime="20230613 16:43:56.213" endtime="20230613 16:43:56.302"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230613 16:43:59.303" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230613 16:43:56.303" endtime="20230613 16:43:59.303"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@href="/account/closing-account"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:43:59.304" endtime="20230613 16:43:59.338"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@href="/account/closing-account"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:43:59.339" level="INFO">Clicking element '//*[@href="/account/closing-account"]'.</msg>
+<status status="PASS" starttime="20230613 16:43:59.338" endtime="20230613 16:43:59.445"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230613 16:44:02.446" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230613 16:43:59.445" endtime="20230613 16:44:02.446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:44:02.446" endtime="20230613 16:44:02.477"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),"If you close your account:")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:44:02.478" endtime="20230613 16:44:02.505"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),"Before closing your account:")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:44:02.505" endtime="20230613 16:44:02.520"/>
+</kw>
+<status status="PASS" starttime="20230613 16:43:56.170" endtime="20230613 16:44:02.520"/>
+</kw>
+<kw name="NavigatetoDeletionPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:44:02.520" endtime="20230613 16:44:02.535"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:44:02.536" level="INFO">Clicking element '//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]'.</msg>
+<status status="PASS" starttime="20230613 16:44:02.536" endtime="20230613 16:44:02.577"/>
+</kw>
+<status status="PASS" starttime="20230613 16:44:02.520" endtime="20230613 16:44:02.577"/>
+</kw>
+<kw name="CheckBox">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//label[@class="dc-checkbox closing-account-reasons__checkbox"]//span[@class="dc-text dc-checkbox__label" and contains(text(),"I have other financial priorities.")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230613 16:44:02.577" endtime="20230613 16:44:02.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[@class="dc-checkbox closing-account-reasons__checkbox"]//span[@class="dc-text dc-checkbox__label" and contains(text(),"I have other financial priorities.")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230613 16:44:02.599" level="INFO">Clicking element '//label[@class="dc-checkbox closing-account-reasons__checkbox"]//span[@class="dc-text dc-checkbox__label" and contains(text(),"I have other financial priorities.")]'.</msg>
+<msg timestamp="20230613 16:44:03.757" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230613 16:44:03.757" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="dc-text dc-checkbox__label" style="--text-size: var(--text-size-xs); --text-color: var(--text-general); --text-lh: var(--text-lh-unset); --text-weight: var(--text-weight-normal); --text-align: var(--text-align-left);"&gt;...&lt;/span&gt; is not clickable at point (425, 79). Other element would receive the click: &lt;div class="dc-page-overlay__header-title"&gt;...&lt;/div&gt;
+  (Session info: chrome=114.0.5735.106)
+Stacktrace:
+#0 0x55b75f03d133 &lt;unknown&gt;
+#1 0x55b75ed71966 &lt;unknown&gt;
+#2 0x55b75edb43f2 &lt;unknown&gt;
+#3 0x55b75edb25ac &lt;unknown&gt;
+#4 0x55b75edb03be &lt;unknown&gt;
+#5 0x55b75edaf696 &lt;unknown&gt;
+#6 0x55b75eda43ea &lt;unknown&gt;
+#7 0x55b75edcdbd2 &lt;unknown&gt;
+#8 0x55b75eda3d13 &lt;unknown&gt;
+#9 0x55b75edcdd9e &lt;unknown&gt;
+#10 0x55b75ede61c7 &lt;unknown&gt;
+#11 0x55b75edcd9a3 &lt;unknown&gt;
+#12 0x55b75eda246a &lt;unknown&gt;
+#13 0x55b75eda355e &lt;unknown&gt;
+#14 0x55b75effccae &lt;unknown&gt;
+#15 0x55b75f0008fe &lt;unknown&gt;
+#16 0x55b75f009f20 &lt;unknown&gt;
+#17 0x55b75f001923 &lt;unknown&gt;
+#18 0x55b75efd4c0e &lt;unknown&gt;
+#19 0x55b75f024b08 &lt;unknown&gt;
+#20 0x55b75f024c97 &lt;unknown&gt;
+#21 0x55b75f035113 &lt;unknown&gt;
+#22 0x7f92e5e94b43 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20230613 16:44:02.599" endtime="20230613 16:44:03.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230613 16:44:03.758" endtime="20230613 16:44:03.758"/>
+</kw>
+<status status="FAIL" starttime="20230613 16:44:02.577" endtime="20230613 16:44:03.758"/>
+</kw>
+<status status="FAIL" starttime="20230613 16:43:42.310" endtime="20230613 16:44:03.758">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="dc-text dc-checkbox__label" style="--text-size: var(--text-size-xs); --text-color: var(--text-general); --text-lh: var(--text-lh-unset); --text-weight: var(--text-weight-normal); --text-align: var(--text-align-left);"&gt;...&lt;/span&gt; is not clickable at point (425, 79). Other element would receive the click: &lt;div class="dc-page-overlay__header-title"&gt;...&lt;/div&gt;
+  (Session info: chrome=114.0.5735.106)
+Stacktrace:
+#0 0x55b75f03d133 &lt;unknown&gt;
+#1 0x55b75ed71966 &lt;unknown&gt;
+#2 0x55b75edb43f2 &lt;unknown&gt;
+#3 0x55b75edb25ac &lt;unknown&gt;
+#4 0x55b75edb03be &lt;unknown&gt;
+#5 0x55b75edaf696 &lt;unknown&gt;
+#6 0x55b75eda43ea &lt;unknown&gt;
+#7 0x55b75edcdbd2 &lt;unknown&gt;
+#8 0x55b75eda3d13 &lt;unknown&gt;
+#9 0x55b75edcdd9e &lt;unknown&gt;
+#10 0x55b75ede61c7 &lt;unknown&gt;
+#11 0x55b75edcd9a3 &lt;unknown&gt;
+#12 0x55b75eda246a &lt;unknown&gt;
+#13 0x55b75eda355e &lt;unknown&gt;
+#14 0x55b75effccae &lt;unknown&gt;
+#15 0x55b75f0008fe &lt;unknown&gt;
+#16 0x55b75f009f20 &lt;unknown&gt;
+#17 0x55b75f001923 &lt;unknown&gt;
+#18 0x55b75efd4c0e &lt;unknown&gt;
+#19 0x55b75f024b08 &lt;unknown&gt;
+#20 0x55b75f024c97 &lt;unknown&gt;
+#21 0x55b75f035113 &lt;unknown&gt;
+#22 0x7f92e5e94b43 &lt;unknown&gt;
+</status>
+</test>
+<doc>single test for login</doc>
+<status status="FAIL" starttime="20230613 16:43:42.222" endtime="20230613 16:44:03.758"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase4">Testcase4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
